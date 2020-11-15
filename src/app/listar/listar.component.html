@@ -1,0 +1,39 @@
+<div class="card">
+    <div class="card-body">
+        <h2 class="card-title">
+          Contactos
+        </h2>
+        <div class="card-text">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Telefono</th>
+                        <th>Titulo</th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let contact of contacts" (click)="onClick(contact);">
+                            <td>
+                                {{contact.name}}
+                            </td>
+                            <td>
+                                {{contact.email}}
+                            </td>
+                            <td>
+                                {{contact.telephone}}
+                            </td>
+                            <td>
+                                {{contact.title}}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<app-product [selectedProduct]="selectedProduct" ></app-product>

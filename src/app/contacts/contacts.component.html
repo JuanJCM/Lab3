@@ -1,0 +1,22 @@
+
+<div *ngIf="selectedContact" class="card">
+    <div class="card-body">
+        <h3 class="card-title">
+           {{selectedContact.name}}
+        </h3>
+        <div class="card-text">
+            <div class="form-group">
+                Email
+                <input type="number" class="form-control" [value]="selectedContact.email" disabled>
+            </div>
+            <div class="form-group">
+                Telefono:
+                <input type="number" class="form-control" [value]="selectedContact.telephone" disabled>
+            </div>
+            <div class="form-group">
+                Titulo:
+                <input type="text" class="form-control" [value]="selectedContact.title" disabled>
+            </div>
+        </div>
+    </div>
+</div>
