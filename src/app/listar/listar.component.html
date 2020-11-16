@@ -14,10 +14,12 @@
                         <th>Telefono</th>
                         <th>Titulo</th>
                     </thead>
-                    <tbody>
+                    <tbody> 
                         <tr *ngFor="let contact of contacts" (click)="onClick(contact);">
                             <td>
-                                {{contact.name}}
+                                <a routerLink = "/contacts/{{contact.name}}">
+                                    {{contact.name}}
+                                </a>
                             </td>
                             <td>
                                 {{contact.email}}
