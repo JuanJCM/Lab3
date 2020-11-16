@@ -13,7 +13,7 @@ export class FiltrarComponent implements OnInit {
 
   ngOnInit(): void {
      this.contacts = [
-       
+       {name: "Juan", email: "juan.carranza@gmail.com", telephone: "99812285", title: "Sr"}
      ]
   }
 
